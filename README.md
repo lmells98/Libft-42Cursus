@@ -28,7 +28,7 @@ I will be adding more functions to this Library throughout my time at the Course
 - ft_strlcpy
 - ft_strnstr
 - ft_strlcat
-- ||      MALLOC      ||
+||      MALLOC      ||
 - ft_calloc
 - ft_strdup
 
