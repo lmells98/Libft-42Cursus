@@ -10,13 +10,9 @@
 
 # define FD_EOF 0
 
-#ifndef BUFFER_SIZE
-# define BUFFER_SIZE 42
-#endif
-
 typedef struct s_list
 {
-	void		*content;
+	void			*content;
 	struct s_list	*next;
 }				t_list;
 
@@ -54,5 +50,7 @@ void	*ft_memmove(void *dest, const void *src, size_t len);
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcat(char *dest, const char *src, size_t dest_size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
+
+t_list	*ft_lstnew(void *content);
 
 #endif
