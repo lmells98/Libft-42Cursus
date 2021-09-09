@@ -1,59 +1,63 @@
 #include "libft.h"
 
-static char	*ft_strrev_malloc(char *str)
+static int	ft_ternint(int condition, long val1, long val2)
 {
-	char	*rev;
-	int		len;
-	int		i;
-
-	len = ft_strlen(str);
-	rev = (char *)malloc((len + 1) * sizeof(char));
-	if (!rev)
-		return (NULL);
-	i = -1;
-	while (--len >= 0)
-		rev[++i] = str[len];
-	rev[++i] = '\0';
-	return (rev);
+	if (condition)
+		return (val1);
+	else
+		return (val2);
 }
 
-static char	*ft_malloc_zero(void)
+static short	ft_is_negative(long n)
 {
-	char	*ret;
+	if (n >= 0)
+	{
+		return (0);
+	}
+	else
+		return (1);
+}
 
-	ret = (char *)malloc(2 * sizeof(char));
-	if (!ret)
-		return (NULL);
-	ret[0] = '0';
-	ret[1] = 0;
-	return (ret);
+static short	ft_digits(long n)
+{
+	short	n_dig;
+
+	if (n == 0)
+		n_dig = 1;
+	else
+		n_dig = 0;
+	while (n != 0)
+	{
+		n_dig++;
+		n /= 10;
+	}
+	return (n_dig);
 }
 
 char	*ft_itoa(int n)
 {
-	char		nbr[12];
-	int			i;
-	int			sign;
-	long int	nb;
+	char		*nbr_str;
+	short		n_dig;
+	short		neg;
+	long int	nbr;
 
-	if (n == 0)
-		return (ft_malloc_zero());
-	nb = (long int)n;
-	sign = 1;
-	if (nb < 0)
+	nbr = (long int)n;
+	neg = ft_is_negative(nbr);
+	n_dig = ft_digits(nbr) + ft_ternint(neg == 1, 1, 0);
+	nbr_str = (char *)malloc((n_dig + 1) * sizeof(char));
+	if (!nbr_str)
+		return (NULL);
+	nbr_str[0] = '0';
+	nbr_str[n_dig] = 0;
+	if (neg)
 	{
-		sign *= -1;
-		nb = -nb;
+		nbr_str[0] = '-';
+		nbr = -nbr;
 	}
-	i = 0;
-	while (nb)
+	while (nbr && --n_dig >= 0)
 	{
-		nbr[i] = nb % 10 + '0';
-		nb /= 10;
-		i++;
+		nbr_str[n_dig] = (nbr % 10) + '0';
+		nbr /= 10;
 	}
-	if (sign == -1)
-		nbr[i++] = '-';
-	nbr[i] = 0;
-	return (ft_strrev_malloc(nbr));
+	return (nbr_str);
 }
