@@ -10,6 +10,16 @@
 
 # define FD_EOF 0
 
+#ifndef BUFFER_SIZE
+# define BUFFER_SIZE 42
+#endif
+
+typedef struct s_list
+{
+	void		*content;
+	struct s_list	*next;
+}				t_list;
+
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
