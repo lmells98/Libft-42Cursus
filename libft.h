@@ -25,6 +25,7 @@ char	*ft_strrchr(const char *s1, int c);
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 char	**ft_split(const char *s, char c);
 void	ft_bzero(void *s, size_t n);
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	*ft_calloc(size_t count, size_t size);
 void	*ft_memset(void *b, int c, size_t len);
 void	*ft_memchr(const void *s, int c, size_t n);
