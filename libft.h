@@ -4,6 +4,12 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+# define FD_STDIN 1
+# define FD_STDOUT 2
+# define FD_STDERR 3
+
+# define FD_EOF 0
+
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -25,6 +31,10 @@ char	*ft_strrchr(const char *s1, int c);
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 char	**ft_split(const char *s, char c);
 void	ft_bzero(void *s, size_t n);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	*ft_calloc(size_t count, size_t size);
 void	*ft_memset(void *b, int c, size_t len);
