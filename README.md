@@ -45,10 +45,13 @@ I will be adding more functions to this Library throughout my time at the Course
 - ft_putendl_fd
 - ft_putnbr_fd
 
-# Bonus Functions 6/9
+# Bonus Functions 9/9
 - ft_lstnew
 - ft_lstadd_front
 - ft_lstsize
 - ft_lstlast
 - ft_lstadd_back
 - ft_lstdelone
+- ft_lstclear
+- ft_lstiter
+- ft_lstmap
