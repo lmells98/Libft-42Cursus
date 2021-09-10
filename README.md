@@ -6,6 +6,8 @@ We must recreate a Library of highly useful C functions!
 At this time. It only contains the functions required from the project... Plus a few more bonus functions.
 I will be adding more functions to this Library throughout my time at the Course.
 
+Submitted Project for Grading. Will post results once recieved!
+
 # Part 1 Functions 23/23
 - ft_isalpha
 - ft_isdigit
@@ -45,10 +47,13 @@ I will be adding more functions to this Library throughout my time at the Course
 - ft_putendl_fd
 - ft_putnbr_fd
 
-# Bonus Functions 6/9
+# Bonus Functions 9/9
 - ft_lstnew
 - ft_lstadd_front
 - ft_lstsize
 - ft_lstlast
 - ft_lstadd_back
 - ft_lstdelone
+- ft_lstclear
+- ft_lstiter
+- ft_lstmap
