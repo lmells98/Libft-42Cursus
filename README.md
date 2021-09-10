@@ -6,6 +6,8 @@ We must recreate a Library of highly useful C functions!
 At this time. It only contains the functions required from the project... Plus a few more bonus functions.
 I will be adding more functions to this Library throughout my time at the Course.
 
+Submitted Project for Grading. Will post results once recieved!
+
 # Part 1 Functions 23/23
 - ft_isalpha
 - ft_isdigit
