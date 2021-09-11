@@ -4,12 +4,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-# define FD_STDIN 1
-# define FD_STDOUT 2
-# define FD_STDERR 3
-
-# define FD_EOF 0
-
 typedef struct s_list
 {
 	void			*content;
