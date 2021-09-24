@@ -6,7 +6,10 @@ We must recreate a Library of highly useful C functions!
 At this time. It only contains the functions required from the project... Plus a few more bonus functions.
 I will be adding more functions to this Library throughout my time at the Course.
 
-Submitted Project for Grading. Will post results once recieved!
+My first attempt failed the Moulinette Grading System with a final score of 58%. This is because the score will stop tallying if a function does not work as intended.
+The error was in my ft_strdup function. I forgot to allocate and extra bytes for NULL termination.
+
+After that error was fixed, I retried the project and it received a perfect score plus the bonus 25%, which was based on Linked List Functions.
 
 # Part 1 Functions 23/23
 - ft_isalpha
