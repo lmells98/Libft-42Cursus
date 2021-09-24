@@ -7,9 +7,14 @@ At this time. It only contains the functions required from the project... Plus a
 I will be adding more functions to this Library throughout my time at the Course.
 
 My first attempt failed the Moulinette Grading System with a final score of 58%. This is because the score will stop tallying if a function does not work as intended.
+
+<img width="880" alt="Screen Shot 2021-09-24 at 11 12 41 AM" src="https://user-images.githubusercontent.com/86273901/134606483-dcfb2c26-05da-4eac-ac4e-3b4b57e5f108.png">
+
 The error was in my ft_strdup function. I forgot to allocate and extra bytes for NULL termination.
 
 After that error was fixed, I retried the project and it received a perfect score plus the bonus 25%, which was based on Linked List Functions.
+
+<img width="1156" alt="Screen Shot 2021-09-24 at 11 14 08 AM" src="https://user-images.githubusercontent.com/86273901/134606515-fa2449bb-2ccd-4e34-923c-d66408ec3c7f.png">
 
 # Part 1 Functions 23/23
 - ft_isalpha
