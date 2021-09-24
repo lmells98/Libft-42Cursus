@@ -10,7 +10,7 @@ My first attempt failed the Moulinette Grading System with a final score of 58%.
 
 <img width="880" alt="Screen Shot 2021-09-24 at 11 12 41 AM" src="https://user-images.githubusercontent.com/86273901/134606483-dcfb2c26-05da-4eac-ac4e-3b4b57e5f108.png">
 
-The error was in my ft_strdup function. I forgot to allocate and extra bytes for NULL termination.
+The error was in my ft_strdup function. I forgot to allocate an extra byte for NULL termination.
 
 After that error was fixed, I retried the project and it received a perfect score plus the bonus 25%, which was based on Linked List Functions.
 
