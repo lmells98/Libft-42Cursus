@@ -1,6 +1,6 @@
 # libft-42
 
-The first project of my 42 Course experince. 
+The first project of my 42 Course experience. 
 We must recreate a Library of highly useful C functions!
 
 At this time. It only contains the functions required from the project... Plus a few more bonus functions.
